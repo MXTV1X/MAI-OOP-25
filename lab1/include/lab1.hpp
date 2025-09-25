@@ -1,3 +1,3 @@
 #include <string>
 
-int str(std::string s);
+std::string replace(std::string text, int n, char old_value, char new_value);

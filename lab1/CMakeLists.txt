@@ -14,15 +14,15 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 FetchContent_MakeAvailable(googletest)
 
-add_library(function_lib STATIC source/lab1.cpp)
+add_library(replace STATIC source/lab1.cpp)
 
 add_executable(RES main.cpp)
 
-target_link_libraries(RES function_lib)
+target_link_libraries(RES replace)
 
 enable_testing()
 
 add_executable(tests test/test.cpp)
-target_link_libraries(tests function_lib gtest_main)
+target_link_libraries(tests replace gtest_main)
 
 
