@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-#include <string>
 #include "../include/lab1.hpp"
 
 TEST(replace, replaceEveryFirstOccurrence) {
